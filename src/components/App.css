@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css?family=Pacifico&display=swap");
+
+/*  BODY AND HEADER  */
+
+body {
+  background: #f4f4f4;
+}
+
+header {
+  text-align: center;
+}
+
+.head__text {
+  font-size: 50px;
+  font-family: "Pacifico", cursive;
+  color: #7d9162;
+  text-align: center;
+}
+
+/*  SEARCH BOX  */
+
+input {
+  border-radius: 25px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  width: 800px;
+  max-width: 800px;
+  margin: 10px auto;
+  box-sizing: border-box;
+  font-size: 16px;
+  padding: 25px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+input:focus {
+  outline: 0;
+}
+
+input:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+/*  RECIPY BOX  */
+
+.single__recipy {
+  border-radius: 25px;
+  background: white;
+  padding: 50px;
+  margin: 25px auto;
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  align-items: center;
+  max-width: 700px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.recipy__info {
+  margin-right: 15%;
+  margin-left: 50px;
+  display: grid;
+}
+
+img {
+  border-radius: 25px;
+  width: 100%;
+}
+
+.primary__button {
+  border-radius: 25px;
+  text-align: center;
+  max-width: 175px;
+  margin: 10px 0;
+  padding: 15px;
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(#9fc964 0%, #9fc964 50%, #7d9162 50%);
+  background-size: 100% 200%;
+  background-position: 100% 100%;
+  transition: all 0.5s;
+}
+
+.primary__button:hover {
+  background-position: 0 0;
+}
+
+/*  PHONE  */
+
+@media only screen and (max-width: 850px) {
+  input {
+    min-width: 350px;
+    width: auto;
+  }
+
+  .primary__button {
+    padding: 15px 25px;
+    margin: 10px auto;
+  }
+
+  .recipy__info {
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 10px;
+    display: grid;
+  }
+
+  .single__recipy {
+    grid-template-columns: 1fr;
+    margin: 25px 50px;
+  }
+}
